@@ -109,8 +109,9 @@ const createEventRequest = (eventParams, customData, user) => {
     return new EventRequest(access_token, pixel_id).setEvents(eventsData);
 };
 
-const makeRequest = () => {
-    const eventRequest = createEventRequest();
+const makeRequest = (requestData) => {
+    const { eventParams, customData, user } = requestData;
+    const eventRequest = createEventRequest(eventParams, customData, user);
 
     eventRequest.execute().then(
         response => {
@@ -138,6 +139,7 @@ const sendPurchaserEvent = () => {
     );
 };
 
+// WIP Testing
 sendPurchaserEvent();
 
 exports.makeRequest = makeRequest;
