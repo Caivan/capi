@@ -1,0 +1,24 @@
+{
+    "eventParams": { 
+        "eventName": "Purchase", 
+        "eventSourceUrl": "http://jaspers-market.com/product/123", 
+        "actionSource": "website"
+    },
+    "customData": {
+        "currency": "usd",
+        "price": 123.45,
+        "content": {
+            "productId": "product123", 
+            "quantity": 10, 
+            "deliveryCategory": "HOME"
+        }
+    },
+    "user": { 
+        "email": "joe@eg.com", 
+        "phones": ["12345678901", "14251234567"], 
+        "ipAddress": "192.168.20.20", 
+        "userAgent": "Mozilla/5.0", 
+        "fbp": "fb.1.1558571054389.1098115397", 
+        "fbc": "fb.1.1554763741205.AbCdEfGhIjKlMnOpQrStUvWxYz1234567890"
+    }
+}
