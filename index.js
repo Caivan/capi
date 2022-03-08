@@ -58,8 +58,8 @@ const createUserData = (email, phones, ipAddress, userAgent, fbp, fbc) => {
 const createContent = (productId, quantity, deliveryCategory) => {
     const content = new Content ();
 
-    content.setId('product123')
-    content.setQuantity(1)
+    content.setId(productId)
+    content.setQuantity(quantity)
     content.setDeliveryCategory(DeliveryCategory.HOME_DELIVERY);
 
     return content;
